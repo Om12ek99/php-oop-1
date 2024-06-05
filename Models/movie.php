@@ -34,7 +34,7 @@ class Movies{
     /**
      * Set the value of description
      *
-     * @return  self
+     * 
      */ 
     public function setDescription($description)
     {
@@ -55,7 +55,7 @@ class Movies{
     /**
      * Set the value of director
      *
-     * @return  self
+     *
      */ 
     public function setDirector($director)
     {
@@ -76,7 +76,7 @@ class Movies{
     /**
      * Set the value of year
      *
-     * @return  self
+     * 
      */ 
     public function setYear($year)
     {
