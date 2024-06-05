@@ -9,9 +9,9 @@ class Movies{
 
     // nome
     // set del nome
-    public function setNameMovie(string $index_name) {
-        if (strlen($index_name) > 0) {              //controlla che l'esistenza del valore
-            $this->name = $index_name;
+    public function setNameMovie(string $name) {
+        if (strlen($name) > 0) {              //controlla che l'esistenza del valore
+            $this->name = $name;
         } else {
             $this->name = "Nessun titolo presente";
         }
