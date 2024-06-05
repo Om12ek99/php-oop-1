@@ -42,6 +42,27 @@ class Movies{
 
         return $this;
     }
+
+    //director
+    /**
+     * Get the value of director
+     */ 
+    public function getDirector()
+    {
+        return $this->director;
+    }
+
+    /**
+     * Set the value of director
+     *
+     * @return  self
+     */ 
+    public function setDirector($director)
+    {
+        $this->director = $director;
+
+        return $this;
+    }
 }
 
 ?>
