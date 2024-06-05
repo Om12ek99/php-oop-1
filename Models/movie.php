@@ -38,9 +38,11 @@ class Movies{
      */ 
     public function setDescription($description)
     {
-        $this->description = $description;
-
-        return $this;
+         if (strlen($description) > 0) {              //controlla che l'esistenza del valore
+            $this->name = $description;
+        } else {
+            $this->name = "Nessuna descrizione presente";
+        }
     }
 
     //director
@@ -59,9 +61,11 @@ class Movies{
      */ 
     public function setDirector($director)
     {
-        $this->director = $director;
-
-        return $this;
+        if (strlen($director) > 0) {              //controlla che l'esistenza del valore
+            $this->name = $director;
+        } else {
+            $this->name = "Nessuna direttore presente";
+        }
     }
 
     //year
@@ -80,9 +84,11 @@ class Movies{
      */ 
     public function setYear($year)
     {
-        $this->year = $year;
-
-        return $this;
+        if (strlen($year)> 0 && $year > 1888) {     //controlla la validitò del valore
+            $this->year= $year;
+        }else{
+            $this->year="anno non valido";
+        }
     }
 }
 
